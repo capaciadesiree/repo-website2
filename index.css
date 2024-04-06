@@ -1,0 +1,234 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div, section, span, ul, li, a, header {
+  box-sizing: border-box;
+}
+
+/* first version nav style
+.home-nav-items, .projects-nav-items, .about-nav-items {
+  grid-area: right;
+  display: grid;
+  margin: 10px;
+  padding: 2px;
+  text-align: right;
+  align-content: space-between;
+  list-style: none;
+  position: fixed;
+  top: 28%;
+  right: 40px;
+  line-height: 100px;
+}
+
+/* home-nav-items 
+
+.home-nav, .menu2 a, .menu3 a {
+  color: #E8EDEE;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 10px;
+  writing-mode: horizontal-tb;
+}
+
+.menu1-highlight a {
+  color: #21D0B3;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 10px;
+  writing-mode: horizontal-tb;
+  font-weight: bold;
+}
+
+/* projects-nav-items
+
+.projects-nav, .menu1 a, .menu3 a {
+  color: #E8EDEE;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 10px;
+  writing-mode: horizontal-tb;
+}
+
+.menu2-highlight a {
+  color: #21D0B3;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 10px;
+  writing-mode: horizontal-tb;
+  font-weight: bold;
+}
+
+/* about-nav-items 
+
+.about-nav, .menu1 a, .menu2 a {
+  color: #E8EDEE;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 10px;
+  writing-mode: horizontal-tb;
+}
+
+.menu3-highlight a {
+  color: #21D0B3;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 10px;
+  writing-mode: horizontal-tb;
+  font-weight: bold;
+} 
+*/
+
+/* nav item position1
+.home-nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  width: 100%;
+} */
+
+.home-nav-container {
+  position: fixed;
+  top: 50%;
+  right: 92px;
+  transform: translate(0, -50%);
+  width: 200px;
+  height: 200px;
+  text-align: right;
+  z-index: 4;
+}
+
+
+.home-nav-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.home-nav-items a {
+  color: #21D0B3;
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 100px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.home-nav-items a:hover {
+  color: #146D76;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* ----> start of style for homepage <---- */
+
+.container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.toggle-container {
+    position: relative;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    display: block;
+    width: 350px; 
+    height: 150px; 
+    background-color: #C2BFBF;
+    border-radius: 80px; 
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle-ball svg {
+    width: 120px; 
+    height: 120px; 
+    background-color: #E8EDEE;
+    border-radius: 80px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    transition: transform 0.3s ease;
+}
+
+.toggle-text-left,
+.toggle-text-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #E8EDEE;
+    font-size: 30px;
+    font-weight: bold;
+    pointer-events: none; /* Prevent text from affecting click events */
+    letter-spacing: 1px;
+}
+
+
+.toggle-text-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 70px; 
+    font-size: 30px; 
+    font-weight: bold;
+    pointer-events: none; 
+    display: block; 
+    letter-spacing: 1px;
+}
+
+.toggle-text-right {
+    right: 60px;
+    color: #1A2C56;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #575757;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-ball {
+    transform: translateX(57%);
+}
+
+/* FOOTER container style */
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+
+/* Icon container style */
+.icon-container {
+  gap: 10px;
+  margin: 10px 10px 50px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SVG icons style */
+.icon {
+  width: 35px;
+  height: 35px;
+  fill: #21D0B3; 
+  transition: fill 0.3s ease; 
+  cursor: pointer;
+}
+
+.icon:hover {
+  fill: #146D76;
+}
