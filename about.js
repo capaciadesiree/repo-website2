@@ -1,3 +1,13 @@
+// JavaScript to control Nav items fullscreen background visibility
+document.querySelector('.burger-icon').addEventListener('click', function() {
+  // Toggle class to rotate bars and change to X
+  document.querySelector('.burger-icon').classList.toggle('open');
+  
+  // Toggle fullscreen background visibility
+  document.querySelector('.collapsed-bg').classList.toggle('open');
+  document.querySelector('.collapsed-nav-items').classList.toggle('visible');
+}); 
+
 // loader script
 document.addEventListener("DOMContentLoaded", function() {
   const percentages = document.querySelectorAll('.percentage');
