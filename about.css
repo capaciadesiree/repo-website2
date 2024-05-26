@@ -125,6 +125,10 @@ color: #21D0B3;
       display: none; /* Hide standard nav items */
   }
 
+  .logo.hidden {
+    display: none;
+  }
+
   .burger-icon {
       display: block; /* Show the burger icon */
       cursor: pointer;

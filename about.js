@@ -6,6 +6,9 @@ document.querySelector('.burger-icon').addEventListener('click', function() {
   // Toggle fullscreen background visibility
   document.querySelector('.collapsed-bg').classList.toggle('open');
   document.querySelector('.collapsed-nav-items').classList.toggle('visible');
+
+  // Toggle the hidden class on the logo
+  document.querySelector('.logo').classList.toggle('hidden');
 }); 
 
 // loader script

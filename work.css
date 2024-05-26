@@ -112,6 +112,10 @@ header {
     .work-nav-container {
         display: none; /* Hide standard nav items */
     }
+
+    .logo.hidden {
+      display: none;
+    }
   
     .burger-icon {
         display: block; /* Show the burger icon */
