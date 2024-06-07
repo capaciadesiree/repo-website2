@@ -42,3 +42,16 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 1000);
   });
 });
+
+
+
+/* form without the simulated logic
+document.addEventListener('DOMContentLoaded', function () {
+  var form = document.getElementById('contact-form');
+
+  form.addEventListener('submit', function (event) {
+    // No need to prevent default behavior; let the form submit naturally
+
+    // Netlify will handle form submission automatically
+  });
+}); */
